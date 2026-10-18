@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM Manipulation | Assignment 5</title>
   <link rel="stylesheet" href="style.css">
+  <script src="dom.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -29,6 +30,29 @@
       <p class="eyebrow">PART 02</p>
       <h1>DOM manipulation</h1>
       <p>Change text, update styles and edit a list.</p>
+    </div>
+    <div class="tasks-grid">
+      <section class="task">
+        <h2><span class="task-number">2</span> Changing content</h2>
+        <p id="paragraph" aria-live="polite">This is the original paragraph.</p>
+        <button id="change-text" type="button">Change Text</button>
+      </section>
+      <section class="task">
+        <h2><span class="task-number">3</span> Changing styles</h2>
+        <div id="style-box" class="box">Change my background color or font size.</div>
+        <div class="buttons">
+          <button id="change-color" type="button">Change Color</button>
+          <button id="change-size" class="secondary" type="button">Change Font Size</button>
+        </div>
+      </section>
+      <section class="task task-wide">
+        <h2><span class="task-number">4</span> Creating and removing elements</h2>
+        <div class="buttons">
+          <button id="add-item" type="button">Add Item</button>
+          <button id="remove-item" class="secondary" type="button">Remove Item</button>
+        </div>
+        <ul id="item-list" aria-live="polite"></ul>
+      </section>
     </div>
   </main>
 </body>
