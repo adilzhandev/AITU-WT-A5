@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events | Assignment 5</title>
   <link rel="stylesheet" href="style.css">
+  <script src="events.js?v=assignment5-final" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -29,6 +30,46 @@
       <p class="eyebrow">PART 03</p>
       <h1>Events</h1>
       <p>Mouse events, keyboard events and a calculator.</p>
+    </div>
+    <div class="tasks-grid">
+      <section class="task">
+        <h2><span class="task-number">5</span> Mouse events</h2>
+        <div id="hover-box" class="box">Move the mouse over this box.</div>
+      </section>
+      <section class="task">
+        <h2><span class="task-number">6</span> Keyboard events</h2>
+        <div class="field">
+          <label for="keyboard-input">Type something</label>
+          <input id="keyboard-input" type="text" autocomplete="off">
+        </div>
+        <p>You typed: <output id="keyboard-output" for="keyboard-input"></output></p>
+      </section>
+      <section class="task task-wide">
+        <h2><span class="task-number">7</span> Calculator</h2>
+        <form id="calculator">
+          <div class="calculator-fields">
+            <div class="field">
+              <label for="first-number">First number</label>
+              <input id="first-number" type="number" step="any" required>
+            </div>
+            <div class="field">
+              <label for="operator">Operation</label>
+              <select id="operator">
+                <option value="+">+ Addition</option>
+                <option value="-">− Subtraction</option>
+                <option value="*">× Multiplication</option>
+                <option value="/">÷ Division</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="second-number">Second number</label>
+              <input id="second-number" type="number" step="any" required>
+            </div>
+          </div>
+          <button type="submit">Calculate</button>
+        </form>
+        <p class="result-line">Result: <output id="result" for="first-number operator second-number">—</output></p>
+      </section>
     </div>
   </main>
 </body>
