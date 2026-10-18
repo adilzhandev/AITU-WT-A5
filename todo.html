@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List | Assignment 5</title>
   <link rel="stylesheet" href="style.css">
+  <script src="todo.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -30,6 +31,22 @@
       <h1>To-do list</h1>
       <p>Add tasks, mark them as completed or delete them.</p>
     </div>
+    <section class="task todo-panel">
+      <h2><span class="task-number">8</span> Interactive to-do list</h2>
+      <form id="todo-form">
+        <div class="todo-entry">
+          <div class="field">
+            <label for="task-input">New task</label>
+            <input id="task-input" type="text" placeholder="e.g. Review JavaScript events" autocomplete="off" required aria-describedby="task-message">
+          </div>
+          <button type="submit">Add Task</button>
+        </div>
+        <p id="task-message" class="message" aria-live="polite"></p>
+      </form>
+      <p id="empty-message">No tasks yet.</p>
+      <ul id="task-list"></ul>
+      <p class="hint">Tasks are kept only until this page is reloaded.</p>
+    </section>
   </main>
 </body>
 </html>
